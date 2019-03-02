@@ -1,30 +1,92 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <!-- Main stylesheet here.  Compiled from sass (see link and insuctions below) - https://sass-lang.com/guide -->
+  <link rel="stylesheet" href="/assets/css/main.css">
+
+  <!--The most direct way to make this happen is in your terminal. Once Sass is installed, you can compile your Sass to CSS using the sass command. You'll need to tell Sass which file to build from, and where to output CSS to. For example, running sass input.scss output.css from your terminal would take a single Sass file, input.scss, and compile that file to output.css.
+  You can also watch individual files or directories with the --watch flag. The watch flag tells Sass to watch your source files for changes, and re-compile CSS each time you save your Sass. If you wanted to watch (instead of manually build) your input.scss file, you'd just add the watch flag to your command, like so:
+  sass --watch input.scss output.css
+  
+  You can watch and output to directories by using folder paths as your input and output, and separating them with a colon. In this example:
+  sass --watch app/sass:public/stylesheets
+  
+  Sass would watch all files in the app/sass folder for changes, and compile CSS to the public/stylesheets folder. -->
+
+  <title>Hello, world!</title>
 </head>
-<body>
-        <div class="your-class">
-                <div>your content</div>
-                <div>your content</div>
-                <div>your content</div>
-              </div>
 
-              <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script>
-    $(document).ready(function(){
-    $('.your-class').slick({
-    setting-name: setting-value
-  });
-});
-</script>	
+<body>
+  <h1>Hello, world!</h1>
+
+  <!-- Begin Slider Markup -->
+  <!-- Slider container -->
+  <div class="slider-container">
+    <!-- Slider list -->
+    <ul class="slider-list">
+      <li class="slider-slide slider-slide-active"><img src="https://source.unsplash.com/UO02gAW3c0c/480x250" alt="" />
+      </li>
+
+      <li class="slider-slide slider-slide-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, facilis
+        architecto? In fuga, qui animi harum. Cupiditate sunt dolorum quisquam sint possimus maiores nesciunt eveniet
+        ex, maxime deleniti at animi!</li>
+
+      <li class="slider-slide slider-slide-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque
+        voluptas, laborum deleniti, eligendi qui facilis voluptate modi sunt tempore culpa, officia, error aspernatur
+        praesentium id at quasi vitae neque explicabo.</li>
+
+      <li class="slider-slide slider-slide-hidden"><img src="https://source.unsplash.com/cg78F1rKOMg/480x250" alt="" />
+      </li>
+
+      <li class="slider-slide slider-slide-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit esse
+        nulla repellat, ipsum laudantium dolorum reprehenderit vitae! Rem eius hic dignissimos voluptas minima, delectus
+        quis natus fuga dolore suscipit laudantium.</li>
+
+      <li class="slider-slide slider-slide-hidden"><img src="https://source.unsplash.com/WeYamle9fDM/480x250" alt="" />
+      </li>
+
+      <li class="slider-slide slider-slide-hidden">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid
+        asperiores, maxime fugiat tempora dolore, id odit magnam quae, perspiciatis porro vitae. Cumque nesciunt numquam
+        nobis beatae voluptatum, reprehenderit quo, quaerat.</li>
+
+      <li class="slider-slide slider-slide-hidden"><img src="https://source.unsplash.com/M4XgNhmLnjs/480x250" alt="" />
+      </li>
+    </ul><!-- .end Slider list -->
+
+    <!-- Slider controls -->
+    <div class="slider-controlls">
+      <ul class="controlls-list">
+        <li><a href="#" class="js-slider-left slider-control control-left"><i class="fa fa-caret-left"></i></a></li>
+        <li><a href="#" class="js-slider-right slider-control control-right"><i class="fa fa-caret-right"></i></a></li>
+      </ul>
+    </div><!-- .end Slider controls -->
+  </div><!-- .end Slider container -->
+
+  <!-- End Slider Markup -->
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
